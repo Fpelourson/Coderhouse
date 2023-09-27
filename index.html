@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Preguntas</h1>
+    </header>
+
+    <div class="container">
+        <section id="pregunta1">
+            <h3>1- ¿EN QUÉ PAÍS SE UTILIZÓ LA PRIMERA BOMBA ATÓMICA?</h3>
+            <label>
+                <input type="radio" value="1" name="pregunta1" onclick="respuesta(0,this)">China
+            </label>
+            <label>
+                <input type="radio" value="2" name="pregunta1" onclick="respuesta(0,this)">Japón
+            </label>
+        </section>
+
+        <section id="pregunta2">
+            <h3>2- ¿CUÁL FUE LA PRIMERA CIVILIZACIÓN HUMANA? </h3>
+            <label>
+                <input type="radio" value="1" name="pregunta2" onclick="respuesta(1,this)">Sumeria
+            </label>
+            <label>
+                <input type="radio" value="2" name="pregunta2" onclick="respuesta(1,this)">Egipcia
+            </label>
+        </section>
+
+        <section id="pregunta3">
+            <h3>3- ¿QUIÉN FUNDÓ ROMA SEGÚN LA LEYENDA? </h3>
+            <label>
+                <input type="radio" value="1" name="pregunta3" onclick="respuesta(2,this)">Rómulo
+            </label>
+            <label>
+                <input type="radio" value="2" name="pregunta3" onclick="respuesta(2,this)">Remo
+            </label>
+        </section>
+
+        <section id="pregunta4">
+            <h3>4- ¿CUÁNTOS CORAZONES TIENE UN PULPO? </h3>
+            <label>
+                <input type="radio" value="1" name="pregunta4" onclick="respuesta(3,this)">Uno
+            </label>
+            <label>
+                <input type="radio" value="2" name="pregunta4" onclick="respuesta(3,this)">Tres
+            </label>
+        </section>
+
+        <button onclick="corregir()">CORREGIR</button>
+        <H2>Cantidad de aciertos: <span id="resultado"></span></H2>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
