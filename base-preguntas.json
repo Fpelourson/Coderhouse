@@ -1,0 +1,52 @@
+[
+{
+    "pregunta": "¿EN QUÉ PAÍS SE UTILIZÓ LA PRIMERA BOMBA ATÓMICA?",
+    "respuesta": "Japón",
+    "incorrecta1": "China",
+    "incorrecta2": "Estados Unidos",
+    "incorrecta3": "Rusia"
+},
+{
+    "pregunta": "¿DÓNDE NACIÓ ADOLF HITLER?",
+    "respuesta": "Austria",
+    "incorrecta1": "Alemania",
+    "incorrecta2": "Rusia",
+    "incorrecta3": "Bélgica"
+},  
+{
+    "pregunta": "¿CUÁL FUE LA PRIMERA CIVILIZACIÓN HUMANA?",
+    "respuesta": "Sumeria",
+    "incorrecta1": "Acadios",
+    "incorrecta2": "Babilónicos",
+    "incorrecta3": "Asirios"
+},
+{
+    "pregunta": "¿QUIÉN FUNDÓ ROMA SEGÚN LA LEYENDA?",
+    "respuesta": "Rómulo",
+    "incorrecta1": "Remo",
+    "incorrecta2": "César",
+    "incorrecta3": "Odoacro"
+},
+{
+    "pregunta": "¿EN QUÉ AÑO CAYÓ EL MURO DE BERLÍN?",
+    "respuesta": "1989",
+    "incorrecta1": "1985",
+    "incorrecta2": "1980",
+    "incorrecta3": "1987"
+},
+{
+    "pregunta": "¿EN QUÉ AÑOS OCURRIÓ LA PRIMERA GUERRA MUNDIAL?",
+    "respuesta": "1914 - 1918",
+    "incorrecta1": "1939 - 1945",
+    "incorrecta2": "1918 - 1924",
+    "incorrecta3": "1916 - 1920"
+},
+{
+    "pregunta": "¿CUÁL ES EL PAÍS MÁS EXTENSO DEL MUNDO?",
+    "respuesta": "Rusia",
+    "incorrecta1": "China",
+    "incorrecta2": "EE.UU",
+    "incorrecta3": "Canadá"
+}
+
+]

@@ -1,60 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Preguntas</h1>
-    </header>
-
-    <div class="container">
-        <section id="pregunta1">
-            <h3>1- ¿EN QUÉ PAÍS SE UTILIZÓ LA PRIMERA BOMBA ATÓMICA?</h3>
-            <label>
-                <input type="radio" value="1" name="pregunta1" onclick="respuesta(0,this)">China
-            </label>
-            <label>
-                <input type="radio" value="2" name="pregunta1" onclick="respuesta(0,this)">Japón
-            </label>
-        </section>
-
-        <section id="pregunta2">
-            <h3>2- ¿CUÁL FUE LA PRIMERA CIVILIZACIÓN HUMANA? </h3>
-            <label>
-                <input type="radio" value="1" name="pregunta2" onclick="respuesta(1,this)">Sumeria
-            </label>
-            <label>
-                <input type="radio" value="2" name="pregunta2" onclick="respuesta(1,this)">Egipcia
-            </label>
-        </section>
-
-        <section id="pregunta3">
-            <h3>3- ¿QUIÉN FUNDÓ ROMA SEGÚN LA LEYENDA? </h3>
-            <label>
-                <input type="radio" value="1" name="pregunta3" onclick="respuesta(2,this)">Rómulo
-            </label>
-            <label>
-                <input type="radio" value="2" name="pregunta3" onclick="respuesta(2,this)">Remo
-            </label>
-        </section>
-
-        <section id="pregunta4">
-            <h3>4- ¿CUÁNTOS CORAZONES TIENE UN PULPO? </h3>
-            <label>
-                <input type="radio" value="1" name="pregunta4" onclick="respuesta(3,this)">Uno
-            </label>
-            <label>
-                <input type="radio" value="2" name="pregunta4" onclick="respuesta(3,this)">Tres
-            </label>
-        </section>
-
-        <button onclick="corregir()">CORREGIR</button>
-        <H2>Cantidad de aciertos: <span id="resultado"></span></H2>
+    <title>Preguntas</title>
+  </head>
+  
+  <body>
+    <style>
+      * {
+        transition: all 0.3s;
+      }
+      body {
+        background: rgb(205, 149, 21);
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 130%;
+      }
+      .contenedor {
+        width: 98vw;
+        height: 97vh;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .encabezado {
+        position: relative;
+        background: rgb(237, 212, 176);
+        min-width: 300px;
+        width: 70%;
+        max-width: 600px;
+        padding: 30px;
+        font-size: 1.2rem;
+      }
+      .pregunta {
+        padding: 10px;
+      }
+      .btn {
+        background: white;
+        width: 60%;
+        max-width: 550px;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .btn:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  
+    <div class="contenedor">
+      <div class="encabezado">
+        <div class="pregunta" id="pregunta">
+        </div>
+      </div>
+      <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
+      <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
+      <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
+      <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
+      <script src="main.js"></script>
     </div>
-
-    <script src="./main.js"></script>
-</body>
-</html>
+  
+  </body></html>
