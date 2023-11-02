@@ -8,6 +8,10 @@ let btn_correspondiente = [
     select_id("btn3"),
     select_id("btn4")
 ]
+let preguntas_hechas = 0;
+let preguntas_correctas = 0;
+let puntaje = 0;
+select_id("puntaje").innerHTML = puntaje;
 
 escogerPreguntaAleatoria()
 
@@ -15,8 +19,10 @@ function escogerPreguntaAleatoria() {
     escogerPregunta(Math.floor(Math.random() * interprete_bp.length))
 }
 
+
 function escogerPregunta(n) {
     pregunta = interprete_bp[n]
+
     select_id("pregunta").innerHTML = pregunta.pregunta
     desordenarRespuestas(pregunta)
 }
@@ -37,16 +43,49 @@ function desordenarRespuestas(pregunta) {
     select_id("btn4").innerHTML = posibles_respuestas[3]
 }
 
+let suspender_botones = false;
 function oprimir_btn(i) {
-    if (posibles_respuestas[i] == pregunta.respuesta) {
-        btn_correspondiente[i].style.background = "green";
-    }else{
-        btn_correspondiente[i].style.background = "red";
+    if (suspender_botones) {
+        return;
     }
-    setTimeout(() => {
-        reiniciar()
-    }, 3000);
+    suspender_botones = true;
+    if (posibles_respuestas[i] == pregunta.respuesta) {
+        preguntas_correctas++;
+        preguntas_hechas++;
+        btn_correspondiente[i].style.background = "lightgreen";
+        puntaje++;
+    } else {
+        btn_correspondiente[i].style.background = "pink";
+        preguntas_hechas++;
+    }
+    for (let j = 0; j < 4; j++) {
+        if (posibles_respuestas[j] == pregunta.respuesta) {
+        btn_correspondiente[j].style.background = "lightgreen";
+        break;
+        }
+        select_id("puntaje").innerHTML = `${puntaje} / ${"10"}`;
+        if(preguntas_hechas == "10"){
+            Swal.fire({
+                title: 'Juego terminado!',
+                text: `${puntaje} / ${"10"}`,
+                icon: 'success',
+                confirmButtonText: "Cerrar"
+            })
+        }
+    }
+        setTimeout(() => {
+            reiniciar()
+            suspender_botones = false;
+        }, 3000);
+        function reiniciar(){
+            for (const btn of btn_correspondiente) {
+                btn.style.background = "white";
+            }
+            escogerPreguntaAleatoria()
+        }
 }
+
+
 
 function reiniciar(){
     for (const btn of btn_correspondiente) {

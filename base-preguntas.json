@@ -47,6 +47,111 @@
     "incorrecta1": "China",
     "incorrecta2": "EE.UU",
     "incorrecta3": "Canadá"
+},
+{
+    "pregunta": "¿CÓMO SE LLAMA EL DESIERTO DE MÉXICO?",
+    "respuesta": "Sonora",
+    "incorrecta1": "Atacama",
+    "incorrecta2": "Gobi",
+    "incorrecta3": "Sahara"
+},
+{
+    "pregunta": "¿CUÁL ES LA CAPITAL DE NICARAGUA?",
+    "respuesta": "Managua",
+    "incorrecta1": "San josé",
+    "incorrecta2": "Tegucigalpa",
+    "incorrecta3": "Nasáu"
+},
+{
+    "pregunta": "¿CUÁNTOS CORAZONES TIENE UN PULPO?",
+    "respuesta": "Tres",
+    "incorrecta1": "Dos",
+    "incorrecta2": "Uno",
+    "incorrecta3": "Cuatros"
+},
+{
+    "pregunta": "¿QUIÉN FORMULÓ LA TEORÍA DE LA RELATIVIDAD?",
+    "respuesta": "Albert Einstein",
+    "incorrecta1": "Isaac Newton",
+    "incorrecta2": "Marie Curie",
+    "incorrecta3": "Charles Darwin"
+},
+{
+    "pregunta": "¿CADA CUÁNTOS AÑOS PASA POR LA TIERRA EL COMETA HALLEY?",
+    "respuesta": "75 años",
+    "incorrecta1": "50 años",
+    "incorrecta2": "100 años",
+    "incorrecta3": "10 años"
+},
+{
+    "pregunta": "¿CUÁL ES EL PAÍS MÁS POBLADO DEL MUNDO?",
+    "respuesta": "India",
+    "incorrecta1": "China",
+    "incorrecta2": "EE.UU",
+    "incorrecta3": "Australia"
+},
+{
+    "pregunta": "¿QUÉ ELEMENTO TIENE EL SÍMBOLO PT?",
+    "respuesta": "Platino",
+    "incorrecta1": "Potasio",
+    "incorrecta2": "Plomo",
+    "incorrecta3": "Protactinio"
+},
+{
+    "pregunta": "¿CUÁL FUE EL PRIMER PAÍS EN EL QUE PUDIERON VOTAR LAS MUJERES?",
+    "respuesta": "Nueva Zelanda",
+    "incorrecta1": "Argentina",
+    "incorrecta2": "EE.UU",
+    "incorrecta3": "España"
+},
+{
+    "pregunta": "¿CÓMO SE LLAMA EL MIEDO A LAS ALTURAS?",
+    "respuesta": "Acrofobia",
+    "incorrecta1": "Astrafobia",
+    "incorrecta2": "Amaxofobia",
+    "incorrecta3": "Hematofobia"
+},
+{
+    "pregunta": "¿CUÁL ES EL ÚNICO MAMÍFERO VOLADOR?",
+    "respuesta": "El murciélago",
+    "incorrecta1": "El halcon",
+    "incorrecta2": "El avestruz",
+    "incorrecta3": "El Pingüino"
+},
+{
+    "pregunta": "¿CUÁL ES EL RÍO MÁS LARGO DEL MUNDO?",
+    "respuesta": "Amazonas",
+    "incorrecta1": "Rin",
+    "incorrecta2": "Nilo",
+    "incorrecta3": "Paraná"
+},
+{
+    "pregunta": "¿CON CUÁNTOS PAISES COMPARTE COLOMBIA FRONTERAS TERRESTRES?",
+    "respuesta": "Cinco",
+    "incorrecta1": "Siete",
+    "incorrecta2": "Cuatro",
+    "incorrecta3": "Tres"
+},
+{
+    "pregunta": "¿CUÁNDO SE FUNDÓ LA CIUDAD DE BOGOTÁ?",
+    "respuesta": "El 6 de agosto de 1538",
+    "incorrecta1": "El 8 de octubre de 1558",
+    "incorrecta2": "El 29 de julio de 1525",
+    "incorrecta3": "EL 16 de septiembre de 1538"
+},
+{
+    "pregunta": "¿EN QUÉ CIUDAD ESTÁ EL PARTENÓN?",
+    "respuesta": "Atenas",
+    "incorrecta1": "Nikea",
+    "incorrecta2": "Tirana",
+    "incorrecta3": "Roma"
+},
+{
+    "pregunta": "¿CÓMO SE LLAMA UN CONJUNTO GRANDE DE CERDOS?",
+    "respuesta": "Piara",
+    "incorrecta1": "Jauría",
+    "incorrecta2": "Cardumen",
+    "incorrecta3": "Manada"
 }
 
 ]
