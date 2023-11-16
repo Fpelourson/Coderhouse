@@ -43,6 +43,9 @@ function desordenarRespuestas(pregunta) {
     select_id("btn4").innerHTML = posibles_respuestas[3]
 }
 
+
+
+
 let suspender_botones = false;
 function oprimir_btn(i) {
     if (suspender_botones) {
@@ -64,14 +67,16 @@ function oprimir_btn(i) {
         break;
         }
         select_id("puntaje").innerHTML = `${puntaje} / ${"10"}`;
-        if(preguntas_hechas == "10"){
-            Swal.fire({
-                title: 'Juego terminado!',
-                text: `${puntaje} / ${"10"}`,
-                icon: 'success',
-                confirmButtonText: "Cerrar"
-            })
-        }
+        
+    }
+    if(preguntas_hechas == "10"){
+        Swal.fire({
+            title: 'Juego terminado!',
+            text: `${puntaje} / ${"10"}`,
+            icon: 'success',
+            confirmButtonText: "Cerrar"
+        });
+        puntaje=0;
     }
         setTimeout(() => {
             reiniciar()
@@ -87,12 +92,7 @@ function oprimir_btn(i) {
 
 
 
-function reiniciar(){
-    for (const btn of btn_correspondiente) {
-        btn.style.background = "white";
-    }
-    escogerPreguntaAleatoria()
-}
+
 
 function select_id(id){
     return document.getElementById(id)
@@ -113,3 +113,5 @@ function readText(ruta_local) {
     }
     return texto;
     }
+
+
